@@ -1,5 +1,5 @@
-import Patient from '@/components/patient/Patient'
-import Doctor from '@/components/doctor/Doctor'
+import Patient from '@/components/Patient'
+import Doctor from '@/components/Doctor'
 
 export default [
   {

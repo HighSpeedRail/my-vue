@@ -42,7 +42,6 @@
 </template>
 
 <script>
-  require('./doctor.less');
 	export default {
 		name: 'doctor',
 		props: [],
@@ -72,3 +71,48 @@
 		components: {}
 	}
 </script>
+
+<style>
+  #doctor {
+    text-align: left;
+    margin: .5rem auto;
+    line-height: .5rem;
+    width: 8rem;
+    border: 1px solid red;
+    border-radius: .1rem;
+  }
+  #doctor p {
+    margin: 0;
+    padding: .2rem;
+    background-color: red;
+    color: white;
+    height: .5rem;
+    border-radius: .1rem .1rem 0 0;
+    font-weight: bold;
+  }
+  #doctor div {
+    font-size: .4rem;
+    width: 7.5rem;
+    margin: .2rem auto;
+  }
+  #doctor label {
+    font-size: inherit;
+    margin-right: .2rem;
+  }
+  #doctor input {
+    border: .01rem solid #333;
+  }
+  #doctor select {
+    font-size: .5rem;
+    height: .6rem;
+    width: 2rem;
+
+  }
+  #doctor option {
+    font-size: .2rem;
+  }
+  #doctor button {
+    margin-right: .5rem;
+    margin-top: .2rem;
+  }
+</style>
