@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/Home'
-import Login from '@/components/Login'
+import Agreement from '@/components/Agreement'
 import children from './routes'
 
 Vue.use(Router);
@@ -15,9 +15,9 @@ export default new Router({
       children
     },
     {
-      path: '/login',
-      name: 'Login',
-      component: Login,
+      path: '/agreement',
+      name: 'Agreement',
+      component: Agreement
     }
   ]
 })
