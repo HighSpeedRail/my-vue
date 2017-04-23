@@ -94,9 +94,10 @@
             clearInterval(this.flag);
             this.code = '获取验证码';
         }
+        var that = this;
         setTimeout(function () {
-          this.styleObj.login_success = false;
-          this.warning = '正在建设，请稍后';
+          that.styleObj.login_success = false;
+          that.warning = '正在建设，再等等吧';
         }, 1000);
       }
     }
