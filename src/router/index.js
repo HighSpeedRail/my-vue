@@ -4,7 +4,6 @@ import Resource from 'vue-resource'
 import Home from '@/components/Home'
 import Register from '@/components/Register'
 import Agreement from '@/components/Agreement'
-import children from './routes'
 
 Vue.use(Router);
 Vue.use(Resource);
@@ -14,8 +13,7 @@ export default new Router({
     {
       path: '/',
       name: 'Home',
-      component: Home,
-      children
+      component: Home
     },
     {
       path: '/reg',
