@@ -9,7 +9,8 @@ db.once('open', function () {
 });
 
 var userSchema = new mongoose.Schema({
-  cellphone: {type: Number}
+  cellphone: {type: Number},
+  password: {type: String}
 }, {collection: 'user'});
 var User = mongoose.model('user', userSchema);
 

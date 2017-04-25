@@ -17,7 +17,3 @@
         components: {}
     }
 </script>
-
-<style lang="less">
-
-</style>
