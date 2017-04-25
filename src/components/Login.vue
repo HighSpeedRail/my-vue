@@ -64,9 +64,9 @@
         var that = this;
         this.$http.post('/index', {cellphone: this.cellphone, password: this.password}).then(res => {
           if (res.bodyText === 'Pass') {
-            that.warning = '手机号密码验证通过';
+            that.$router.push({path: '/content'});
           } else {
-            that.warning = '手机号密码验证失败'
+            that.warning = '手机号密码验证失败';
           }
         });
         setTimeout(function () {
