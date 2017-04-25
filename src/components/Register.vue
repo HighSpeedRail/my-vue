@@ -64,7 +64,7 @@
               that.warning = '该手机号已注册过';
             } else {
               that.warning = '注册成功';
-              that.$route.push({path: '/:cellphone'})
+              that.$router.push({path: '/:cellphone'})
             }
           }
         );
