@@ -60,7 +60,6 @@
         var that = this;
         this.$http.post('/reg', {cellphone: this.cellphone, password: this.password}).then(
           function (res) {
-            console.log(res);
             if (res.bodyText === 'registered') {
               that.warning = '该手机号已注册过';
             } else {

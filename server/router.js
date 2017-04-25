@@ -17,12 +17,10 @@ router.post('/index', function(req, res) {
 
 router.post('/reg', function (req, res) {
   DB.find({cellphone: req.body.cellphone}, function (err, result) {
-    console.log(result);
     if (result.length) {
       res.end('registered');
     } else {
       DB.create({cellphone: req.body.cellphone, password: req.body.password}, function (err, result) {
-        console.log(err, result);
       });
       res.end('reg ok');
     }
