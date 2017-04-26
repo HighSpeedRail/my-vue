@@ -13,9 +13,6 @@ var proxyMiddleware = require('http-proxy-middleware')
 var webpackConfig = process.env.NODE_ENV === 'testing'
   ? require('./webpack.prod.conf')
   : require('./webpack.dev.conf')
-var routers = require('../server/router')
-
-var body_parser = require('body-parser')
 
 // default port where dev server listens for incoming traffic
 var port = process.env.PORT || config.dev.port
@@ -86,9 +83,9 @@ devMiddleware.waitUntilValid(() => {
 
 var server = app.listen(port)
 
-app.use(body_parser.json());
+/*app.use(body_parser.json());
 app.use(body_parser.urlencoded({extended: false}));
-app.use('/', routers);
+app.use('/', routers);*/
 
 module.exports = {
   ready: readyPromise,

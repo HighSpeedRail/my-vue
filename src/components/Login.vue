@@ -1,20 +1,12 @@
 <template>
-  <div class="home">
+  <div class="login">
     <p class="title">微 笑</p>
     <p class="warning">{{ warning }}</p>
     <div class="login_input">
-      <div class="weui-cell input_cell input_cell_top">
-        <div class="weui-cell_bd">
-          <input type="number" class="weui-input" placeholder="请输入手机号" v-model="cellphone">
-        </div>
-      </div>
-      <div class="weui-cell input_cell">
-        <div class="weui-cell_bd">
-          <input type="password" class="weui-input" placeholder="请输入密码" v-model="password">
-        </div>
-      </div>
+      <input class="input_cell input_cell_top" type="number" placeholder="请输入手机号" v-model="cellphone">
+      <input class="input_cell" type="password" placeholder="请输入密码" v-model="password">
     </div>
-    <div class="agree">
+    <div class="agree_check">
       <input type="checkbox" name="checkbox1" id="agree" v-model="agree">
       <label for="agree">我已阅读并同意
         <router-link to="/agreement">《微笑使用协议》</router-link>
