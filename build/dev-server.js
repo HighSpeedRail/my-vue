@@ -83,9 +83,12 @@ devMiddleware.waitUntilValid(() => {
 
 var server = app.listen(port)
 
-/*app.use(body_parser.json());
+var body_parser = require('body-parser')
+var routers = require('../server/router')
+
+app.use(body_parser.json());
 app.use(body_parser.urlencoded({extended: false}));
-app.use('/', routers);*/
+app.use('/', routers);
 
 module.exports = {
   ready: readyPromise,
